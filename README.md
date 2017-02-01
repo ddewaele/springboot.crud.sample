@@ -24,8 +24,12 @@ docker run --name springboot.crud.sample -t \
 ddewaele/springboot.crud.sample
 ```
 
-## h2
-The application uses an h2 database. The h2 console is enabled at http://localhost:8080/h2-console.
+## H2
+The application uses an H2 database. The h2 console is enabled at http://localhost:8080/h2-console.
+
+## Swagger
+
+Swagger docs are available at http://localhost:8080/v2/api-docs
 
 ## Data
 [Mockaroo](https://www.mockaroo.com) is a great service for generating random data.
