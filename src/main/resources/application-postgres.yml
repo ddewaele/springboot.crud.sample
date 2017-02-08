@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/employee_db
+    username: employee_db_user
+    password: employee_db_user
+    platform: POSTGRESQL
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+#logging:
+#  level:
+#    org.springframework.web: DEBUG
+#    org.hibernate: DEBUG
