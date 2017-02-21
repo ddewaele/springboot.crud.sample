@@ -1,3 +1,5 @@
+[![Travis CI](https://travis-ci.org/ddewaele/springboot.crud.sample.svg?branch=master)](https://travis-ci.org/ddewaele/springboot.crud.sample/) 
+
 ## Introduction
 Sample Spring boot application exposing a REST interface for employee entities.
 
