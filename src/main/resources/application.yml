@@ -6,7 +6,7 @@ spring:
         web-allow-others: true  #convenience for docker image
   datasource:
     username: sa
-    password: adminadmin_123
+    password:
     #url: jdbc:h2:~/test
     url: jdbc:h2:mem:test;DB_CLOSE_DELAY=-1
 

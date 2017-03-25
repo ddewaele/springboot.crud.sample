@@ -1,11 +1,16 @@
 [![Travis CI](https://travis-ci.org/ddewaele/springboot.crud.sample.svg?branch=master)](https://travis-ci.org/ddewaele/springboot.crud.sample/) 
 
 ## Introduction
-Sample Spring boot application exposing a REST interface for employee entities.
+
+A very sample Spring boot application running on port 8080 exposing a Spring Data REST interface for employee entities. Used for demo purposes.
 
 ```
 curl http://localhost:8080/employees
 curl -X POST -H "Content-Type:application/json" -d '{ "firstName" : "Karl", "lastName" : "Penzhorn" }' http://localhost:8080/employees
+curl http://localhost:8080/employees/1
+curl -X PUT -H "Content-Type:application/json" -d '{ "firstName" : "Karl", "lastName" : "Smith" }' http://localhost:8080/employees/1
+curl http://localhost:8080/employees/1
+curl -X DELETE -H "Content-Type:application/json" http://localhost:8080/employees/1
 ```
 ## Building
 The sample is built using maven. 
@@ -14,7 +19,7 @@ mvn clean install
 ```
 
 ## Docker
-The maven build file also generates a docker container with the name `springboot.crud.sample`
+The maven build file also generates a docker container with the name `springboot.crud.sample` and is available on [Docker HUB](https://hub.docker.com/r/ddewaele/springboot.crud.sample/).
 
 The docker image can be started using
 
@@ -25,16 +30,19 @@ docker run --name springboot.crud.sample -t \
 ddewaele/springboot.crud.sample
 ```
 
-
+You can also provide environment properties. For example if you want to run against a postgres DB, a specific profile is available:
+```
 docker run --name springboot.crud.sample -t \
 -p 8080:8080 \
 -v /tmp/logs:/var/log \
 -e "SPRING_PROFILES_ACTIVE=postgres" \
 ddewaele/springboot.crud.sample
+```
 
+To build the docker image yourself, execute a `maven clean install`.
 
 ## H2
-The application uses an H2 database. The h2 console is enabled at http://localhost:8080/h2-console.
+By default the application uses an H2 database. The h2 console is enabled at http://localhost:8080/h2-console.
 
 ## Swagger
 
