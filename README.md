@@ -18,6 +18,10 @@ The sample is built using maven.
 mvn clean install
 ```
 
+## Maven
+
+This project was uploaded to maven central using [Sonatypes excellent OSSRH guide](http://central.sonatype.org/pages/ossrh-guide.html).
+
 ## Docker
 The maven build file also generates a docker container with the name `springboot.crud.sample` and is available on [Docker HUB](https://hub.docker.com/r/ddewaele/springboot.crud.sample/).
 
@@ -94,3 +98,7 @@ echo $txt | awk -F "," '{printf("curl -X POST -H \"Content-Type: application/jso
 ```
 
 See the `parse.sh`
+
+
+## Testing
+
