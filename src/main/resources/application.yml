@@ -10,6 +10,11 @@ spring:
     #url: jdbc:h2:~/test
     url: jdbc:h2:mem:test;DB_CLOSE_DELAY=-1
 
+# Spring 1.5 has secured actuators by default.
+management:
+  security:
+    enabled: false
+
 #logging:
 #  level:
 #    org.springframework.web: DEBUG
