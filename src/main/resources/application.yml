@@ -14,7 +14,9 @@ spring:
 management:
   security:
     enabled: false
-
+  info:
+    git:
+      mode: full
 #logging:
 #  level:
 #    org.springframework.web: DEBUG
