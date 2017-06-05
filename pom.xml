@@ -4,7 +4,7 @@
 
 	<groupId>com.github.ddewaele</groupId>
 	<artifactId>springboot.crud.sample</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.3</version>
 
 	<name>springboot.crud.sample</name>
 	<description>REST project with Spring Boot</description>
@@ -20,7 +20,7 @@
 		<connection>scm:git:git@github.com:ddewaele/springboot.crud.sample.git</connection>
 		<developerConnection>scm:git:git@github.com:ddewaele/springboot.crud.sample.git</developerConnection>
 		<url>https://github.com/ddewaele/springboot.crud.sample.git/tree/master</url>
-		<tag>HEAD</tag>
+		<tag>springboot.crud.sample-0.0.3</tag>
 	</scm>
 
 	<distributionManagement>
