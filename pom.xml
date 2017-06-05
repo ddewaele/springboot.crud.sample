@@ -18,8 +18,8 @@
 	</parent>
 
 	<scm>
-		<connection>scm:git:git@github.com/ddewaele/springboot.crud.sample.git</connection>
-		<developerConnection>scm:git:git@github.com/ddewaele/springboot.crud.sample.git</developerConnection>
+		<connection>scm:git:git@github.com:ddewaele/springboot.crud.sample.git</connection>
+		<developerConnection>scm:git:git@github.com:ddewaele/springboot.crud.sample.git</developerConnection>
 		<url>https://github.com/ddewaele/springboot.crud.sample.git/tree/master</url>
 		<tag>HEAD</tag>
 	</scm>
