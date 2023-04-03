@@ -1,3 +1,5 @@
 language: java
 install: ./mvnw -U install --quiet -DskipTests=true -DskipDocker
 script: ./mvnw clean test -DskipDocker
+jdk:
+  - openjdk17
