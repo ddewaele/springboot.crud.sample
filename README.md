@@ -12,6 +12,7 @@ curl -X PUT -H "Content-Type:application/json" -d '{ "firstName" : "Karl", "last
 curl http://localhost:8080/employees/1
 curl -X DELETE -H "Content-Type:application/json" http://localhost:8080/employees/1
 ```
+
 ## Building
 The sample is built using maven. 
 ```
